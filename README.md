@@ -1,1 +1,1 @@
-# jc
+# Thư viện lập trình giao diện console dành cho Java
