@@ -8,7 +8,7 @@ import jc.models.Option;
 import jc.templates.View;
 
 /**
- * Hàm chứa các thành phần cơ bản để tạo nên 
+ * Lớp chứa các thành phần cơ bản để tạo nên 
  * một {@code OptionView}. Mỗi {@code OptionView} có thể 
  * chứa nhiều {@code Option} được đánh số, có nội dung 
  * và hành động riêng biệt 
@@ -20,12 +20,6 @@ public abstract class OptionView extends View {
      * Máy đọc 
      */
     private Scanner scanner = new Scanner(System.in);
-
-    @Override
-    protected void hidePage() {
-        super.hidePage();
-        System.out.println("");
-    }
 
     @Override
     public void show() {
@@ -67,6 +61,12 @@ public abstract class OptionView extends View {
                 }
             }
         }
+    }
+    
+    @Override
+    protected void hidePage() {
+        super.hidePage();
+        System.out.println("");
     }
 
     /**
